@@ -195,6 +195,9 @@ html:not(.js) .intro, .no-intro .intro { display: none; }
 @media (min-width: 1100px) { .routes { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .ft { margin-top: clamp(80px, 11vw, 180px); }
 .ft-row { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; color: var(--on-green-mute); margin-bottom: 14px; }
+.ft-row > :nth-child(2) { margin-right: auto; margin-left: clamp(16px, 6vw, 96px); }
+.credit { transition: color .25s; }
+.credit:hover { color: var(--on-green); }
 .ft-mark { width: calc(100% - 2 * var(--pad)); margin: 0 var(--pad) var(--pad); }
 
 /* Project pages: slide in from the right */
